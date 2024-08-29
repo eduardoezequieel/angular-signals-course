@@ -1,4 +1,4 @@
-@import "../../styles/button";
+@import '../../styles/button';
 
 @include buttonStyles();
 
@@ -47,5 +47,4 @@
   border: 1px solid #2086fc;
   background: #1f172d;
   cursor: pointer;
-
 }
