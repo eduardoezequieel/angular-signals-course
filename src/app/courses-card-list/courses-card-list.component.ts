@@ -1,4 +1,4 @@
-import { Component, inject, input, output } from '@angular/core';
+import { Component, inject, input, output, Signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Course } from '../models/course.model';
 import { MatDialog } from '@angular/material/dialog';
@@ -10,4 +10,6 @@ import { MatDialog } from '@angular/material/dialog';
   templateUrl: './courses-card-list.component.html',
   styleUrl: './courses-card-list.component.scss',
 })
-export class CoursesCardListComponent {}
+export class CoursesCardListComponent {
+  courses = input.required<Course[]>();
+}

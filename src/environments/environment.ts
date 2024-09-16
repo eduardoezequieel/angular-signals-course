@@ -1,1 +1,3 @@
-export const environment = {};
+export const environment = {
+  apiRoot: 'https://api.angularbootcamp.com',
+};
